@@ -1,0 +1,551 @@
+/**
+ * GENERAL
+ */
+ html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+img{
+	max-width:100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+body {
+	font-size: 100%;
+	font-family: 'Trebuchet MS', Verdana, serif;
+	
+}
+.container{
+	max-width: 61rem;
+	margin: 0 auto;
+}
+
+/*main*/
+
+          /*header*/
+header{
+	background: url('../images/desktop/image-hero.jpg');
+	height: 100vh;
+	margin-bottom: 7rem;
+}
+header h2{
+	margin: 0;
+	width: 20%;
+	float: left;
+	padding-top: 6%;
+	padding-bottom: 11%;
+	color:white;
+	font-size: 2em;
+	font-family: 'Montserrat';
+}
+header img{
+	display: none;
+}
+header ul{
+	width: 60%;
+	float: right;
+	margin: 0;
+	padding-top: 6%;
+	text-align: end;
+	line-height: 2rem;
+}
+.menu li {
+	display: inline-block;
+	padding-left: 1.2em;
+}
+.menu a{
+	color:  #ffffffc2;
+	font-size: 0.78em;
+	text-decoration: none;
+	}
+.navexperiences{
+	clear: both;
+	width: 60%;
+	border: 0.09em solid white;
+	font-size: 2em;
+	color: white;
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-family: Corbel;
+	letter-spacing: 0.04em;
+}
+header h1{
+	margin: 0.3em 0;
+	font-size: 2em;
+	color: white;
+	text-transform: uppercase;
+	font-weight: lighter;
+	padding-left: 8%;
+}
+.cover{
+	background: #0000006b;
+	height: 100%;
+	width: 100%;
+}
+
+
+		/*article*/
+article{
+	position: relative;
+}
+.interactive{
+	width: 48%;
+    position: absolute;
+    top: 37%;
+	background: white;
+	height: 63%;
+	left: 52%;
+	display: flex;
+	justify-content: end;
+	flex-direction: column;
+	text-align: left;
+}
+.interactive h2{
+	padding-left: 15%;
+	font-size: 2.8em;
+	text-transform: uppercase;
+	margin: 0;
+	font-family: Corbel;
+	font-weight: lighter;
+}	
+.interactive p{
+	padding-left: 15%;
+	margin: 1.5em 0 0;
+	color: #424242;;
+	font-size: 0.85rem;
+	line-height: 1.24rem;
+}	
+
+         /*aside*/
+.creations{
+	display: grid;
+	grid-template-columns: 6.5fr 1fr;
+	margin: 8rem 0 4rem;
+}	
+.creations h2{
+	margin: 0;
+	font-size: 2.8em;
+	font-family: Corbel;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+.creations a{
+	border: 2px solid #848484;
+	padding: 0.5rem 1rem;
+	text-align: center;
+	align-self: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000000c9;
+	border-radius: 3px;
+	font-size: 0.89em;
+	word-spacing: 2px;
+	letter-spacing: 3px;
+	font-weight: bold;
+}
+.seeall2{
+	display: none;
+}	 
+
+section{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 1.6rem;
+	margin-bottom: 8rem;
+}
+.box{
+	position: relative;
+}
+
+.box a span{
+	position: absolute;
+	top:78%;
+	color: #ffffffc9;
+	text-transform: uppercase;
+	font-size: 1.8rem;
+	font-family: Corbel;
+	font-weight: lighter;
+	left: 15%;
+	width: 56%;
+	line-height: 1.8rem;
+	z-index:3;
+}
+.cover2{
+	position: absolute;
+	top: 0;
+	z-index: 2;
+	background: linear-gradient(0deg, rgba(20, 4, 1, 0.51) 21%, rgba(255, 253, 253, 0) 77%);
+	width: 100%;
+	height: 100%;
+}
+
+    /*footer*/
+
+	footer{
+		background-color: black;
+		padding: 2rem 0 0;
+		color: white;	
+	}
+	footer nav{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	footer nav li{
+		display: inline-block;
+	}
+	footer h2{
+		margin: 0;
+		flex-basis: 60%;
+		text-transform: lowercase;
+	}
+	footer ol{
+		margin: 0;
+		flex-basis: 40%;
+		display: flex;
+	    justify-content: end;
+		padding-right: 0.5em;
+	}
+	footer ol li{
+		align-self: center;
+		padding-left: 1rem;
+	}
+
+	footer ul{
+		flex-basis: 60%;
+		margin: 0;
+		padding: 2rem 0;
+	}
+	footer ul li{
+		padding-right: 1rem;
+	}
+	footer ul a{
+		color: white;
+		text-decoration: none;
+	}
+	footer p{
+		flex-basis: 40%;
+		text-align: right;
+		padding: 2rem 0;
+		margin: 0;
+	}
+	.footermenu a{
+		color: #ffffffde;
+		padding-right: 0.6rem;
+		font-size: 0.8em;
+		letter-spacing: 0.025em;
+	}
+	footer p{
+		font-size: 0.8em;
+		color: #909090c9;
+		align-self: center;
+		}
+		.footermenu{
+			line-height: 1.5rem;
+		}
+ .social-icons{
+	 line-height: 2em;
+ }
+
+
+/*active,hover*/
+.focushr{
+	border: 1.3px solid white;
+	width: 45%;
+	margin: 0 auto;
+	display: none;
+}
+.menu li:hover .focushr{
+	display: flex;
+}
+.creations a:hover{
+	background-color: black;
+	color: white;
+}
+.cover2:hover{
+	background:#ffffffc9;
+	z-index: 10;
+}
+.box:hover span{
+	color: black;
+	position: absolute;
+	z-index: 11;
+}
+.footermenu li:hover .focushr{
+	display: flex;
+	
+	margin-right: 35%;
+}
+
+.social-icons li:hover .focushr{
+	display: flex;
+	width: 100%;
+}	
+/*media queries*/
+
+@media ( max-width:1100px){
+     header h2{
+		 padding-left: 2%;
+	 }
+	.menu{
+		padding-right: 2%;
+   }
+    .navexperiences{
+		margin-left: 2%;
+	}
+	section{
+		padding: 0 2%;
+	}
+	.box a span{
+		top: 72%;
+	}
+   }
+   @media ( max-width:887px){
+	.box a span{
+		top: 60%;
+	}
+	.interactive p{
+		margin-top: 0.4em;
+		padding-left: 9%;
+	}
+	.interactive h2{
+		padding-left: 9%;
+	}
+   }
+   @media ( max-width:800px){
+	   .navexperiences{
+		   margin: 0 auto;
+		   width: 80%;
+	   }
+	   header h1{
+		   padding-left: 3%;
+		   padding-right: 3%;
+	   }
+	   .menu a{
+		vertical-align: sub;
+	   }
+	   .interactive p{
+		margin-top: 0.3em;
+		padding-left: 5%;
+	}
+	.interactive h2{
+		padding-left: 5%;
+	}
+   }
+   @media ( max-width:810px){
+	section{
+		display: initial;
+	     }
+	.box{
+		width: 90%;
+		margin: 2.5em auto;
+	    }
+	.box a span{
+		top:42%;
+		left: 6%;
+		width: 37%;
+		color: #ffffffe3;
+		font-size: 2.9em;
+		line-height: 1em;
+		letter-spacing: 1px;
+		}
+		.box img{
+			width: 100%;
+		}
+	aside{
+		padding-bottom: 8em;
+	}	
+	.seeall2{
+		display: block;
+		width: 38%;
+		margin: 0.4em auto;
+		border: 2px solid black;
+		padding: 1rem 0.9rem;
+		text-align: center;
+		align-self: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #000000c9;
+		border-radius: 3px;
+		font-size: 1.5em;
+		word-spacing: 4px;
+		letter-spacing: 7px;
+		font-weight: bold;
+    	}
+		.creations a{
+			display: none;
+		}
+		.creations{
+			text-align: center;
+			display: block;
+			margin-bottom: 0em;
+		}	
+		footer h2{
+			flex: 100%;
+			order: 1;
+			text-align: center;
+			font-size: 2.5em;
+		}
+		footer ol{
+            flex: 100%;
+			order: 3;
+			justify-content: center;
+			padding: 0;
+		}
+		footer ul{
+			flex: 100%;
+			order: 2;
+		}
+		footer p{
+			order: 4;
+			flex: 100%;
+			font-size: 1.5em;
+			text-align: center;
+	}	
+	footer nav ul li{
+		display: block;
+		margin: 0.5em auto;
+		width: 22%;
+		padding: 0.4em;
+		text-align: center;
+		font-size: 2em;
+	}
+	.social-icons img{
+		width: 45px;
+		padding-bottom: 0.4em;
+	}
+	footer ol li{
+		padding-right: 1em;
+	}
+	
+   }
+   @media ( max-width:700px){
+	header{
+		background: url('../images/mobile/image-hero.jpg') -49px 0px;
+	  }
+	header h2 {
+		float: none;
+		padding-top: 10%;
+		padding-left: 8%;
+	  }
+	header ul{
+		float: none;
+		text-align: initial;
+		display: none;
+	 }
+	header img{
+		display: initial;
+		height: 1.5em;
+	 }
+	header h2{
+		display: inline-block;
+		width: 88%;
+		font-size: 2.8em;
+		padding-left: 8%;
+	  }
+	header a:first-of-type{
+		display: inline-block;
+		vertical-align: text-bottom;
+	   }
+	.menu li{
+		display: inherit;
+		padding: 0;
+		text-transform: uppercase;
+		color: white;
+		font-size: 1.8em;
+		padding-bottom: 0.8em;
+		width: 40%;
+		text-align: center;
+	  }
+	.cover{
+		background: none;
+	  }
+	.navexperiences{
+           margin-top:25%;
+		   width: 85%;
+		   height: auto;
+	  }
+	header h1{
+		padding-left: 8%;
+		padding-right: 7%;
+		line-height: 1em;
+	  }
+	.interactive{
+		position: initial;
+		margin: 3em auto;
+		text-align: center;
+		width: 88%;
+      }
+	.interactive h2{
+		padding-left: 0;
+		font-size: 3.6em;
+		line-height: 1em;
+		word-spacing: 0.1em;
+	  }
+	.interactive p{
+		font-size: 1.4em;
+		color: #656565;;
+		line-height: 1.7em;
+		padding: 0 2.1em;
+		letter-spacing: 1px;
+		margin-top: 1.3em;
+	  }
+	article img{
+        display: block;
+		margin: 0 auto;
+		max-width: 88%;
+	  }
+	  .box a span{
+		  width: 45%;
+	  }
+	  .creations{
+		  display: initial;
+	  }
+	  .creations h2{
+		  text-align: center;
+		  font-size: 3.2em;
+		  letter-spacing: 0.02em;
+	      word-spacing: 0.3em;
+		  margin-top: 2.5em;
+	  }
+	  nav{
+		  height: 100%;
+	  }
+   }
+
+   @media ( max-width:555px){
+	header h2{
+		width: 85%;
+		font-size: 2.2em;
+	}
+	header h1{
+		padding: 1% 0  0 2%;
+	}
+	.box a span{
+		font-size: 2em;
+	}
+	
+}
+
+   @media ( max-width:521px){
+          .navexperiences{
+			  width: 95%;
+			}
+			 header h1 {
+               font-size: 1.6em;
+			 } 
+			 .seeall2{
+				 padding: 0.8rem 0.1rem;
+				 font-size: 1rem;
+			 }	 
+		 
+   }
+   @media ( max-width:407px){
+	.box a span{
+		font-size: 1.5em;
+		width: 50%;
+	}
+}
